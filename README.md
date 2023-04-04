@@ -3,7 +3,7 @@ Exploring SwiftUI animations with 3D, Linear, Fluid, gradient and other kind of 
 
 # 3D Ring animation 
 
-![](https://drive.google.com/file/d/1kycXDiBCoa0G2IDjW3Y3CyQLpbGqcOwV/view?usp=share_link)
+![](https://github.com/iAmVishal16/legendary-Animo/blob/main/Simulator_Screen_Recording_-_iPhone_14_Pro_-_2023-04-04_at_11_31_56_AdobeExpress.gif)
 
 # Countdown Timer for Fitness
 
