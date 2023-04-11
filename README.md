@@ -11,3 +11,6 @@ Exploring SwiftUI animations with 3D, Linear, Fluid, gradient and other kind of 
 
 # Triangle Animation Scale
 ![](https://github.com/iAmVishal16/legendary-Animo/blob/main/Screen_Recording_2023-04-08_at_3_59_03_PM_AdobeExpress.gif)
+
+# MultiShapes 3D animation with rotation
+![](https://github.com/iAmVishal16/legendary-Animo/blob/main/Simulator_Screen_Recording_-_iPhone_14_-_2023-04-11_at_15_04_16_AdobeExpress.gif)
