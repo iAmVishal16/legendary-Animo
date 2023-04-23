@@ -17,3 +17,6 @@ Exploring SwiftUI animations with 3D, Linear, Fluid, gradient and other kind of 
 
 # Dots Circle Animation in SwiftUI
 ![](https://github.com/iAmVishal16/legendary-Animo/blob/main/Simulator_Screen_Recording_-_iPhone_14_-_2023-04-15_at_08_45_40_AdobeExpress.gif)
+
+# Google Photos Logo Animation in SwiftUI
+![](https://github.com/iAmVishal16/legendary-Animo/blob/main/Screen_Recording_2023-04-22_at_9_03_32_PM_AdobeExpress.gif)
