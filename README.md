@@ -20,3 +20,6 @@ Exploring SwiftUI animations with 3D, Linear, Fluid, gradient and other kind of 
 
 # Google Photos Logo Animation in SwiftUI
 ![](https://github.com/iAmVishal16/legendary-Animo/blob/main/Screen_Recording_2023-04-22_at_9_03_32_PM_AdobeExpress.gif)
+
+# Rect Rotation animation in SwiftUI
+![](Simulator_Screen_Recording_-_iPhone_14_-_2023-05-14_at_23_44_52_AdobeExpress.gif)
