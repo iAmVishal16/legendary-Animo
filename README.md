@@ -23,3 +23,6 @@ Exploring SwiftUI animations with 3D, Linear, Fluid, gradient and other kind of 
 
 # Rect Rotation animation in SwiftUI
 ![](Simulator_Screen_Recording_-_iPhone_14_-_2023-05-14_at_23_44_52_AdobeExpress.gif)
+
+# Battery Waves with Bubbles animation in SwiftUI
+![](Screen_Recording_2023-06-12_at_11_32_21_PM_AdobeExpress.gif)
