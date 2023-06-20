@@ -26,3 +26,6 @@ Exploring SwiftUI animations with 3D, Linear, Fluid, gradient and other kind of 
 
 # Battery Waves with Bubbles animation in SwiftUI
 ![](Screen_Recording_2023-06-12_at_11_32_21_PM_AdobeExpress.gif)
+
+# 3D Cicles rotation using time sequence animation in SwiftUI
+![](Screen_Recording_2023-06-20_at_11_34_19_PM_AdobeExpress.gif)
