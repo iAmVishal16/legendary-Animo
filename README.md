@@ -29,3 +29,6 @@ Exploring SwiftUI animations with 3D, Linear, Fluid, gradient and other kind of 
 
 # 3D Cicles rotation using time sequence animation in SwiftUI
 ![](Screen_Recording_2023-06-20_at_11_34_19_PM_AdobeExpress.gif)
+
+# Blinking Stars Animation in SwiftUI
+![](BlinkingStarsAnimationSwiftUI.gif)
