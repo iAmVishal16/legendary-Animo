@@ -21,6 +21,8 @@
 		D3A8B6892A965FD1005E69D4 /* TriangleMultiShapeUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A8B67F2A965FD1005E69D4 /* TriangleMultiShapeUIView.swift */; };
 		D3A8B68A2A965FD1005E69D4 /* BatteryAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A8B6802A965FD1005E69D4 /* BatteryAnimation.swift */; };
 		D3A8B68B2A965FD1005E69D4 /* StarsBlinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A8B6812A965FD1005E69D4 /* StarsBlinkView.swift */; };
+		D3A8B68D2A96778D005E69D4 /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A8B68C2A96778D005E69D4 /* Row.swift */; };
+		D3A8B68F2A97C813005E69D4 /* gifs in Resources */ = {isa = PBXBuildFile; fileRef = D3A8B68E2A97C813005E69D4 /* gifs */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		D3A8B67F2A965FD1005E69D4 /* TriangleMultiShapeUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriangleMultiShapeUIView.swift; sourceTree = SOURCE_ROOT; };
 		D3A8B6802A965FD1005E69D4 /* BatteryAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatteryAnimation.swift; sourceTree = SOURCE_ROOT; };
 		D3A8B6812A965FD1005E69D4 /* StarsBlinkView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarsBlinkView.swift; sourceTree = SOURCE_ROOT; };
+		D3A8B68C2A96778D005E69D4 /* Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row.swift; sourceTree = "<group>"; };
+		D3A8B68E2A97C813005E69D4 /* gifs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gifs; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,7 @@
 			children = (
 				D3A8B66A2A965F69005E69D4 /* legendary_AnimoApp.swift */,
 				D3A8B66C2A965F69005E69D4 /* ContentView.swift */,
+				D3A8B68C2A96778D005E69D4 /* Row.swift */,
 				D3A8B6802A965FD1005E69D4 /* BatteryAnimation.swift */,
 				D3A8B6782A965FD1005E69D4 /* CiclesTransView3D.swift */,
 				D3A8B67A2A965FD1005E69D4 /* DotsAnimPreview.swift */,
@@ -84,6 +89,7 @@
 				D3A8B67E2A965FD1005E69D4 /* TriangleAnimation.swift */,
 				D3A8B67F2A965FD1005E69D4 /* TriangleMultiShapeUIView.swift */,
 				D3A8B66E2A965F6B005E69D4 /* Assets.xcassets */,
+				D3A8B68E2A97C813005E69D4 /* gifs */,
 				D3A8B6702A965F6B005E69D4 /* Preview Content */,
 			);
 			path = "legendary-Animo";
@@ -155,6 +161,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3A8B68F2A97C813005E69D4 /* gifs in Resources */,
 				D3A8B6722A965F6B005E69D4 /* Preview Assets.xcassets in Resources */,
 				D3A8B66F2A965F6B005E69D4 /* Assets.xcassets in Resources */,
 			);
@@ -170,6 +177,7 @@
 				D3A8B6862A965FD1005E69D4 /* TimerView.swift in Sources */,
 				D3A8B66D2A965F69005E69D4 /* ContentView.swift in Sources */,
 				D3A8B68A2A965FD1005E69D4 /* BatteryAnimation.swift in Sources */,
+				D3A8B68D2A96778D005E69D4 /* Row.swift in Sources */,
 				D3A8B6892A965FD1005E69D4 /* TriangleMultiShapeUIView.swift in Sources */,
 				D3A8B6832A965FD1005E69D4 /* RingsAnimationView.swift in Sources */,
 				D3A8B6842A965FD1005E69D4 /* DotsAnimPreview.swift in Sources */,
@@ -320,7 +328,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -350,7 +358,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
