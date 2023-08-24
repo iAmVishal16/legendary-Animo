@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 
 struct RowView: View, Hashable {
+    
     var icon: String
     var title: String
     var desc: String
@@ -42,6 +43,10 @@ struct RowView: View, Hashable {
                Spacer()
                 Image(systemName: "chevron.right")
             }
+            .hidden()
+        }
+        .onTapGesture {
+            
         }
     }
 }
