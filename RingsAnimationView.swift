@@ -44,8 +44,9 @@ struct RingsAnimationView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct RingsAnimationView_Previews: PreviewProvider {
     static var previews: some View {
         RingsAnimationView()
+            .preferredColorScheme(.dark)
     }
 }

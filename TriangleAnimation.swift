@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct TriangleAnimationView: View {
     
     @State var isAnimating = false
     @State var scale = 1
@@ -156,7 +156,7 @@ struct ContentView: View {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct TriangleAnimation_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }

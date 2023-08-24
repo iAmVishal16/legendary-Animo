@@ -99,7 +99,7 @@ struct StarsBlinkView: View {
     
 }
 
-struct ContentView_Previews: PreviewProvider {
+struct StarsBlinkView_Previews: PreviewProvider {
     static var previews: some View {
         StarsBlinkView()
             .preferredColorScheme(.dark)
