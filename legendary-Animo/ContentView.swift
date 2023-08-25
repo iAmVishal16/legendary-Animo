@@ -49,32 +49,7 @@ struct ContentView: View {
                 List(selection: $selection) {
                     ForEach(rows.indices, id: \.self) { index in
                         NavigationLink {
-                            let type = AnimationType(rawValue: index)
-                            
-                            switch type {
-                            case .rings:
-                                RingsAnimationView()
-                            case .countDownTimer:
-                                TimerView()
-                            case .triangle:
-                                TriangleAnimationView()
-                            case .multiShape:
-                                TriangleMultiShapeUIView()
-                            case .dots:
-                                DotsAnimPreview()
-                            case .logoG:
-                                GooglePhotosLogoAnim()
-                            case .rect:
-                                RectRotationView()
-                            case .battery:
-                                BatteryAnimation()
-                            case .circles:
-                                CiclesTransViewOptimizeView(animType: $animType, isActive: $isActive)
-                            case .stars:
-                                StarsBlinkView()
-                            case .none:
-                                StarsBlinkView()
-                            }
+                            getDestination(with: index)
                         } label: {
                             rows[index]
                         }
@@ -91,35 +66,34 @@ struct ContentView: View {
         }
     }
     
-    private func getDestination(with index: Int) -> any View {
+    @ViewBuilder
+    private func getDestination(with index: Int) -> some View {
         let type = AnimationType(rawValue: index)
         
         switch type {
         case .rings:
-            return RingsAnimationView()
+            RingsAnimationView()
         case .countDownTimer:
-            return TimerView()
+            TimerView()
         case .triangle:
-            return TriangleAnimationView()
+            TriangleAnimationView()
         case .multiShape:
-            return TriangleMultiShapeUIView()
+            TriangleMultiShapeUIView()
         case .dots:
-            return DotsAnimPreview()
+            DotsAnimPreview()
         case .logoG:
-            return GooglePhotosLogoAnim()
+            GooglePhotosLogoAnim()
         case .rect:
-            return RectRotationView()
+            RectRotationView()
         case .battery:
-            return BatteryAnimation()
+            BatteryAnimation()
         case .circles:
-            return  CiclesTransViewOptimizeView(animType: $animType, isActive: $isActive)
+            CiclesTransViewOptimizeView(animType: $animType, isActive: $isActive)
         case .stars:
-            return StarsBlinkView()
+            StarsBlinkView()
         case nil:
-            break
+            StarsBlinkView()
         }
-        
-        return StarsBlinkView()
     }
     
 }
