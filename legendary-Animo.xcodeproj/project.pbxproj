@@ -7,42 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D3944AB72A9923A8009F6BF0 /* StarsBlinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3944AAD2A9923A7009F6BF0 /* StarsBlinkView.swift */; };
+		D3944AB82A9923A8009F6BF0 /* RectRotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3944AAE2A9923A7009F6BF0 /* RectRotationView.swift */; };
+		D3944AB92A9923A8009F6BF0 /* RingsAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3944AAF2A9923A7009F6BF0 /* RingsAnimationView.swift */; };
+		D3944ABA2A9923A8009F6BF0 /* TriangleAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3944AB02A9923A7009F6BF0 /* TriangleAnimation.swift */; };
+		D3944ABB2A9923A8009F6BF0 /* CiclesTransView3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3944AB12A9923A8009F6BF0 /* CiclesTransView3D.swift */; };
+		D3944ABC2A9923A8009F6BF0 /* GooglePhotosLogoAnim.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3944AB22A9923A8009F6BF0 /* GooglePhotosLogoAnim.swift */; };
+		D3944ABD2A9923A8009F6BF0 /* DotsAnimPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3944AB32A9923A8009F6BF0 /* DotsAnimPreview.swift */; };
+		D3944ABE2A9923A8009F6BF0 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3944AB42A9923A8009F6BF0 /* TimerView.swift */; };
+		D3944ABF2A9923A8009F6BF0 /* TriangleMultiShapeUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3944AB52A9923A8009F6BF0 /* TriangleMultiShapeUIView.swift */; };
+		D3944AC02A9923A8009F6BF0 /* BatteryAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3944AB62A9923A8009F6BF0 /* BatteryAnimation.swift */; };
+		D3944AC22A992800009F6BF0 /* SpiralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3944AC12A992800009F6BF0 /* SpiralView.swift */; };
+		D3944AC42A9928A8009F6BF0 /* FireworksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3944AC32A9928A8009F6BF0 /* FireworksView.swift */; };
 		D3A8B66B2A965F69005E69D4 /* legendary_AnimoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A8B66A2A965F69005E69D4 /* legendary_AnimoApp.swift */; };
 		D3A8B66D2A965F69005E69D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A8B66C2A965F69005E69D4 /* ContentView.swift */; };
 		D3A8B66F2A965F6B005E69D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3A8B66E2A965F6B005E69D4 /* Assets.xcassets */; };
 		D3A8B6722A965F6B005E69D4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3A8B6712A965F6B005E69D4 /* Preview Assets.xcassets */; };
-		D3A8B6822A965FD1005E69D4 /* CiclesTransView3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A8B6782A965FD1005E69D4 /* CiclesTransView3D.swift */; };
-		D3A8B6832A965FD1005E69D4 /* RingsAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A8B6792A965FD1005E69D4 /* RingsAnimationView.swift */; };
-		D3A8B6842A965FD1005E69D4 /* DotsAnimPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A8B67A2A965FD1005E69D4 /* DotsAnimPreview.swift */; };
-		D3A8B6852A965FD1005E69D4 /* RectRotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A8B67B2A965FD1005E69D4 /* RectRotationView.swift */; };
-		D3A8B6862A965FD1005E69D4 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A8B67C2A965FD1005E69D4 /* TimerView.swift */; };
-		D3A8B6872A965FD1005E69D4 /* GooglePhotosLogoAnim.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A8B67D2A965FD1005E69D4 /* GooglePhotosLogoAnim.swift */; };
-		D3A8B6882A965FD1005E69D4 /* TriangleAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A8B67E2A965FD1005E69D4 /* TriangleAnimation.swift */; };
-		D3A8B6892A965FD1005E69D4 /* TriangleMultiShapeUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A8B67F2A965FD1005E69D4 /* TriangleMultiShapeUIView.swift */; };
-		D3A8B68A2A965FD1005E69D4 /* BatteryAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A8B6802A965FD1005E69D4 /* BatteryAnimation.swift */; };
-		D3A8B68B2A965FD1005E69D4 /* StarsBlinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A8B6812A965FD1005E69D4 /* StarsBlinkView.swift */; };
 		D3A8B68D2A96778D005E69D4 /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A8B68C2A96778D005E69D4 /* Row.swift */; };
 		D3A8B68F2A97C813005E69D4 /* gifs in Resources */ = {isa = PBXBuildFile; fileRef = D3A8B68E2A97C813005E69D4 /* gifs */; };
+		D3EEB55E2A9A0E0A00528701 /* CirclesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EEB55D2A9A0E0A00528701 /* CirclesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D3944AAD2A9923A7009F6BF0 /* StarsBlinkView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarsBlinkView.swift; sourceTree = "<group>"; };
+		D3944AAE2A9923A7009F6BF0 /* RectRotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectRotationView.swift; sourceTree = "<group>"; };
+		D3944AAF2A9923A7009F6BF0 /* RingsAnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RingsAnimationView.swift; sourceTree = "<group>"; };
+		D3944AB02A9923A7009F6BF0 /* TriangleAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriangleAnimation.swift; sourceTree = "<group>"; };
+		D3944AB12A9923A8009F6BF0 /* CiclesTransView3D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CiclesTransView3D.swift; sourceTree = "<group>"; };
+		D3944AB22A9923A8009F6BF0 /* GooglePhotosLogoAnim.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooglePhotosLogoAnim.swift; sourceTree = "<group>"; };
+		D3944AB32A9923A8009F6BF0 /* DotsAnimPreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DotsAnimPreview.swift; sourceTree = "<group>"; };
+		D3944AB42A9923A8009F6BF0 /* TimerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
+		D3944AB52A9923A8009F6BF0 /* TriangleMultiShapeUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriangleMultiShapeUIView.swift; sourceTree = "<group>"; };
+		D3944AB62A9923A8009F6BF0 /* BatteryAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatteryAnimation.swift; sourceTree = "<group>"; };
+		D3944AC12A992800009F6BF0 /* SpiralView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpiralView.swift; sourceTree = "<group>"; };
+		D3944AC32A9928A8009F6BF0 /* FireworksView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireworksView.swift; sourceTree = "<group>"; };
 		D3A8B6672A965F69005E69D4 /* legendary-Animo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "legendary-Animo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3A8B66A2A965F69005E69D4 /* legendary_AnimoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = legendary_AnimoApp.swift; sourceTree = "<group>"; };
 		D3A8B66C2A965F69005E69D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D3A8B66E2A965F6B005E69D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D3A8B6712A965F6B005E69D4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		D3A8B6782A965FD1005E69D4 /* CiclesTransView3D.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CiclesTransView3D.swift; sourceTree = SOURCE_ROOT; };
-		D3A8B6792A965FD1005E69D4 /* RingsAnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RingsAnimationView.swift; sourceTree = SOURCE_ROOT; };
-		D3A8B67A2A965FD1005E69D4 /* DotsAnimPreview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DotsAnimPreview.swift; sourceTree = SOURCE_ROOT; };
-		D3A8B67B2A965FD1005E69D4 /* RectRotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectRotationView.swift; sourceTree = SOURCE_ROOT; };
-		D3A8B67C2A965FD1005E69D4 /* TimerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = SOURCE_ROOT; };
-		D3A8B67D2A965FD1005E69D4 /* GooglePhotosLogoAnim.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooglePhotosLogoAnim.swift; sourceTree = SOURCE_ROOT; };
-		D3A8B67E2A965FD1005E69D4 /* TriangleAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriangleAnimation.swift; sourceTree = SOURCE_ROOT; };
-		D3A8B67F2A965FD1005E69D4 /* TriangleMultiShapeUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TriangleMultiShapeUIView.swift; sourceTree = SOURCE_ROOT; };
-		D3A8B6802A965FD1005E69D4 /* BatteryAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatteryAnimation.swift; sourceTree = SOURCE_ROOT; };
-		D3A8B6812A965FD1005E69D4 /* StarsBlinkView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarsBlinkView.swift; sourceTree = SOURCE_ROOT; };
 		D3A8B68C2A96778D005E69D4 /* Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row.swift; sourceTree = "<group>"; };
 		D3A8B68E2A97C813005E69D4 /* gifs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gifs; sourceTree = SOURCE_ROOT; };
+		D3EEB55D2A9A0E0A00528701 /* CirclesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CirclesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D3944AAC2A992378009F6BF0 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				D3944AB62A9923A8009F6BF0 /* BatteryAnimation.swift */,
+				D3944AB12A9923A8009F6BF0 /* CiclesTransView3D.swift */,
+				D3EEB55D2A9A0E0A00528701 /* CirclesView.swift */,
+				D3944AB32A9923A8009F6BF0 /* DotsAnimPreview.swift */,
+				D3944AB22A9923A8009F6BF0 /* GooglePhotosLogoAnim.swift */,
+				D3944AAE2A9923A7009F6BF0 /* RectRotationView.swift */,
+				D3944AAF2A9923A7009F6BF0 /* RingsAnimationView.swift */,
+				D3944AAD2A9923A7009F6BF0 /* StarsBlinkView.swift */,
+				D3944AB42A9923A8009F6BF0 /* TimerView.swift */,
+				D3944AB02A9923A7009F6BF0 /* TriangleAnimation.swift */,
+				D3944AB52A9923A8009F6BF0 /* TriangleMultiShapeUIView.swift */,
+				D3944AC12A992800009F6BF0 /* SpiralView.swift */,
+				D3944AC32A9928A8009F6BF0 /* FireworksView.swift */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
 		D3A8B65E2A965F69005E69D4 = {
 			isa = PBXGroup;
 			children = (
@@ -78,16 +104,7 @@
 				D3A8B66A2A965F69005E69D4 /* legendary_AnimoApp.swift */,
 				D3A8B66C2A965F69005E69D4 /* ContentView.swift */,
 				D3A8B68C2A96778D005E69D4 /* Row.swift */,
-				D3A8B6802A965FD1005E69D4 /* BatteryAnimation.swift */,
-				D3A8B6782A965FD1005E69D4 /* CiclesTransView3D.swift */,
-				D3A8B67A2A965FD1005E69D4 /* DotsAnimPreview.swift */,
-				D3A8B67D2A965FD1005E69D4 /* GooglePhotosLogoAnim.swift */,
-				D3A8B67B2A965FD1005E69D4 /* RectRotationView.swift */,
-				D3A8B6792A965FD1005E69D4 /* RingsAnimationView.swift */,
-				D3A8B6812A965FD1005E69D4 /* StarsBlinkView.swift */,
-				D3A8B67C2A965FD1005E69D4 /* TimerView.swift */,
-				D3A8B67E2A965FD1005E69D4 /* TriangleAnimation.swift */,
-				D3A8B67F2A965FD1005E69D4 /* TriangleMultiShapeUIView.swift */,
+				D3944AAC2A992378009F6BF0 /* Animations */,
 				D3A8B66E2A965F6B005E69D4 /* Assets.xcassets */,
 				D3A8B68E2A97C813005E69D4 /* gifs */,
 				D3A8B6702A965F6B005E69D4 /* Preview Content */,
@@ -174,19 +191,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3A8B6862A965FD1005E69D4 /* TimerView.swift in Sources */,
+				D3944ABE2A9923A8009F6BF0 /* TimerView.swift in Sources */,
+				D3944AB92A9923A8009F6BF0 /* RingsAnimationView.swift in Sources */,
 				D3A8B66D2A965F69005E69D4 /* ContentView.swift in Sources */,
-				D3A8B68A2A965FD1005E69D4 /* BatteryAnimation.swift in Sources */,
 				D3A8B68D2A96778D005E69D4 /* Row.swift in Sources */,
-				D3A8B6892A965FD1005E69D4 /* TriangleMultiShapeUIView.swift in Sources */,
-				D3A8B6832A965FD1005E69D4 /* RingsAnimationView.swift in Sources */,
-				D3A8B6842A965FD1005E69D4 /* DotsAnimPreview.swift in Sources */,
+				D3944AC02A9923A8009F6BF0 /* BatteryAnimation.swift in Sources */,
+				D3944ABA2A9923A8009F6BF0 /* TriangleAnimation.swift in Sources */,
+				D3944ABF2A9923A8009F6BF0 /* TriangleMultiShapeUIView.swift in Sources */,
 				D3A8B66B2A965F69005E69D4 /* legendary_AnimoApp.swift in Sources */,
-				D3A8B6872A965FD1005E69D4 /* GooglePhotosLogoAnim.swift in Sources */,
-				D3A8B6852A965FD1005E69D4 /* RectRotationView.swift in Sources */,
-				D3A8B6882A965FD1005E69D4 /* TriangleAnimation.swift in Sources */,
-				D3A8B6822A965FD1005E69D4 /* CiclesTransView3D.swift in Sources */,
-				D3A8B68B2A965FD1005E69D4 /* StarsBlinkView.swift in Sources */,
+				D3944ABB2A9923A8009F6BF0 /* CiclesTransView3D.swift in Sources */,
+				D3944AB72A9923A8009F6BF0 /* StarsBlinkView.swift in Sources */,
+				D3944AB82A9923A8009F6BF0 /* RectRotationView.swift in Sources */,
+				D3944ABD2A9923A8009F6BF0 /* DotsAnimPreview.swift in Sources */,
+				D3EEB55E2A9A0E0A00528701 /* CirclesView.swift in Sources */,
+				D3944AC42A9928A8009F6BF0 /* FireworksView.swift in Sources */,
+				D3944ABC2A9923A8009F6BF0 /* GooglePhotosLogoAnim.swift in Sources */,
+				D3944AC22A992800009F6BF0 /* SpiralView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

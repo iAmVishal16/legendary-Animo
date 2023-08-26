@@ -21,7 +21,7 @@ struct TriangleMultiShapeUIView: View {
                                    startPoint: .leading,
                                    endPoint: .trailing)
                 )
-                .frame(width: 325, height: 325, alignment: .center)
+                .frame(width: 225, height: 225, alignment: .center)
                 .rotation3DEffect(.degrees(isAnimating ? rotation : 0), axis: (x: 0, y: 1, z: 0))
                 .animation(Animation.easeInOut(duration: 2).repeatForever(autoreverses: true),
                            value: isAnimating)
@@ -33,7 +33,7 @@ struct TriangleMultiShapeUIView: View {
                                    startPoint: .leading,
                                    endPoint: .trailing)
                 )
-                .frame(width: 325, height: 325, alignment: .center)
+                .frame(width: 225, height: 225, alignment: .center)
                 .rotation3DEffect(.degrees(isAnimating ? rotation : 45), axis: (x: 0, y: 1, z: 0))
                 .animation(Animation.easeInOut(duration: 2)
                     .repeatForever(autoreverses: true).delay(0.2),
@@ -46,7 +46,7 @@ struct TriangleMultiShapeUIView: View {
                                    startPoint: .leading,
                                    endPoint: .trailing)
                 )
-                .frame(width: 325, height: 325, alignment: .center)
+                .frame(width: 225, height: 225, alignment: .center)
                 .rotation3DEffect(.degrees(isAnimating ? rotation : 90), axis: (x: 0, y: 1, z: 0))
                 .animation(Animation.easeInOut(duration: 2).repeatForever(autoreverses: true).delay(0.4),
                            value: isAnimating)
@@ -58,7 +58,7 @@ struct TriangleMultiShapeUIView: View {
                                    startPoint: .leading,
                                    endPoint: .trailing)
                 )
-                .frame(width: 325, height: 325, alignment: .center)
+                .frame(width: 225, height: 225, alignment: .center)
                 .rotation3DEffect(.degrees(isAnimating ? rotation : 120), axis: (x: 0, y: 1, z: 0))
                 .animation(Animation.easeInOut(duration: 2).repeatForever(autoreverses: true).delay(0.6),
                            value: isAnimating)
@@ -70,7 +70,7 @@ struct TriangleMultiShapeUIView: View {
                                    startPoint: .leading,
                                    endPoint: .trailing)
                 )
-                .frame(width: 325, height: 325, alignment: .center)
+                .frame(width: 225, height: 225, alignment: .center)
                 .rotation3DEffect(.degrees(isAnimating ? rotation : 140), axis: (x: 0, y: 1, z: 0))
                 .animation(Animation.easeInOut(duration: 2).repeatForever(autoreverses: true).delay(0.8),
                            value: isAnimating)
@@ -82,7 +82,7 @@ struct TriangleMultiShapeUIView: View {
                                    startPoint: .leading,
                                    endPoint: .trailing)
                 )
-                .frame(width: 325, height: 325, alignment: .center)
+                .frame(width: 225, height: 225, alignment: .center)
                 .rotation3DEffect(.degrees(isAnimating ? rotation : 0), axis: (x: 0, y: 1, z: 0))
                 .animation(Animation.easeInOut(duration: 2).repeatForever(autoreverses: true).delay(1.2),
                            value: isAnimating)
@@ -94,7 +94,7 @@ struct TriangleMultiShapeUIView: View {
                                    startPoint: .leading,
                                    endPoint: .trailing)
                 )
-                .frame(width: 325, height: 325, alignment: .center)
+                .frame(width: 225, height: 225, alignment: .center)
                 .rotation3DEffect(.degrees(isAnimating ? rotation : 90), axis: (x: 0, y: 1, z: 0))
                 .animation(Animation.easeInOut(duration: 2).repeatForever(autoreverses: true).delay(1.4),
                            value: isAnimating)
