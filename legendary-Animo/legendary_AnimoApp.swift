@@ -12,6 +12,7 @@ struct legendary_AnimoApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .preferredColorScheme(.dark)
         }
     }
 }
