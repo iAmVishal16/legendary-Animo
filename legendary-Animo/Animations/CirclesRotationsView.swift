@@ -61,7 +61,6 @@ struct CircleView: View {
                 anchorZ: 5.6,
                 perspective: 0.0
             )
-        //            .opacity(scale)
             .offset(x: size.width / 20, y: size.width / 20 - size.height)
             .rotationEffect(.degrees(rotation))
             .onAppear {
