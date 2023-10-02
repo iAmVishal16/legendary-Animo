@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D30329152ACB440300A43DEB /* CirclesRotationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30329142ACB440200A43DEB /* CirclesRotationsView.swift */; };
 		D3944AB72A9923A8009F6BF0 /* StarsBlinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3944AAD2A9923A7009F6BF0 /* StarsBlinkView.swift */; };
 		D3944AB82A9923A8009F6BF0 /* RectRotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3944AAE2A9923A7009F6BF0 /* RectRotationView.swift */; };
 		D3944AB92A9923A8009F6BF0 /* RingsAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3944AAF2A9923A7009F6BF0 /* RingsAnimationView.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D30329142ACB440200A43DEB /* CirclesRotationsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CirclesRotationsView.swift; sourceTree = "<group>"; };
 		D3944AAD2A9923A7009F6BF0 /* StarsBlinkView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarsBlinkView.swift; sourceTree = "<group>"; };
 		D3944AAE2A9923A7009F6BF0 /* RectRotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectRotationView.swift; sourceTree = "<group>"; };
 		D3944AAF2A9923A7009F6BF0 /* RingsAnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RingsAnimationView.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				D3944AB52A9923A8009F6BF0 /* TriangleMultiShapeUIView.swift */,
 				D3944AC12A992800009F6BF0 /* SpiralView.swift */,
 				D3944AC32A9928A8009F6BF0 /* FireworksView.swift */,
+				D30329142ACB440200A43DEB /* CirclesRotationsView.swift */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				D3944AC42A9928A8009F6BF0 /* FireworksView.swift in Sources */,
 				D3944ABC2A9923A8009F6BF0 /* GooglePhotosLogoAnim.swift in Sources */,
 				D3944AC22A992800009F6BF0 /* SpiralView.swift in Sources */,
+				D30329152ACB440300A43DEB /* CirclesRotationsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

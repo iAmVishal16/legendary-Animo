@@ -23,6 +23,7 @@ struct ContentView: View {
         case stars
         case spiral
         case fireworks
+        case loader
     }
     
     let rows:[RowView] = [
@@ -38,7 +39,8 @@ struct ContentView: View {
         RowView(icon: "◎", title: "3D Circles animation", desc: "Time sequence, z,y,z axis"),
         RowView(icon: "✨", title: "Blinking Stars Animation", desc: "Control the birth rate, hue, and unleash your creative freedom."),
         RowView(icon: "꩜", title: "Spriral Animation", desc: "Control the birth rate, hue, and unleash your creative freedom."),
-        RowView(icon: "🔥", title: "Fireworks Animation", desc: "Control the birth rate, hue, and unleash your creative freedom.")
+        RowView(icon: "🔥", title: "Fireworks Animation", desc: "Control the birth rate, hue, and unleash your creative freedom."),
+        RowView(icon: "✷", title: "Loader Animation v1", desc: "a smooth loader animation using timingCurve")
         ]
         
     @State private var selection: Int? = 0
@@ -103,6 +105,11 @@ struct ContentView: View {
             SpiralView()
         case .fireworks:
             FireworksView()
+        case .loader:
+            CirclesRotations(count: 5)
+                .frame(width: 100, height: 100, alignment: .center)
+                .padding()
+                .preferredColorScheme(.dark)
         case nil:
             StarsBlinkView()
         }
