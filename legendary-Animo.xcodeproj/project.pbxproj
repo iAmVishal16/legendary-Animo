@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D30329152ACB440300A43DEB /* CirclesRotationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30329142ACB440200A43DEB /* CirclesRotationsView.swift */; };
+		D34674942BDAB5B600D967E2 /* BarLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34674932BDAB5B600D967E2 /* BarLoaderView.swift */; };
+		D34AA3B92BCBA6A90076D619 /* RotatingDotsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34AA3B82BCBA6A90076D619 /* RotatingDotsView.swift */; };
 		D3944AB72A9923A8009F6BF0 /* StarsBlinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3944AAD2A9923A7009F6BF0 /* StarsBlinkView.swift */; };
 		D3944AB82A9923A8009F6BF0 /* RectRotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3944AAE2A9923A7009F6BF0 /* RectRotationView.swift */; };
 		D3944AB92A9923A8009F6BF0 /* RingsAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3944AAF2A9923A7009F6BF0 /* RingsAnimationView.swift */; };
@@ -20,6 +22,7 @@
 		D3944AC02A9923A8009F6BF0 /* BatteryAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3944AB62A9923A8009F6BF0 /* BatteryAnimation.swift */; };
 		D3944AC22A992800009F6BF0 /* SpiralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3944AC12A992800009F6BF0 /* SpiralView.swift */; };
 		D3944AC42A9928A8009F6BF0 /* FireworksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3944AC32A9928A8009F6BF0 /* FireworksView.swift */; };
+		D39976DA2B68159D0015F88B /* DotsAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39976D92B68159D0015F88B /* DotsAnimationView.swift */; };
 		D3A8B66B2A965F69005E69D4 /* legendary_AnimoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A8B66A2A965F69005E69D4 /* legendary_AnimoApp.swift */; };
 		D3A8B66D2A965F69005E69D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A8B66C2A965F69005E69D4 /* ContentView.swift */; };
 		D3A8B66F2A965F6B005E69D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3A8B66E2A965F6B005E69D4 /* Assets.xcassets */; };
@@ -31,6 +34,8 @@
 
 /* Begin PBXFileReference section */
 		D30329142ACB440200A43DEB /* CirclesRotationsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CirclesRotationsView.swift; sourceTree = "<group>"; };
+		D34674932BDAB5B600D967E2 /* BarLoaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarLoaderView.swift; sourceTree = "<group>"; };
+		D34AA3B82BCBA6A90076D619 /* RotatingDotsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotatingDotsView.swift; sourceTree = "<group>"; };
 		D3944AAD2A9923A7009F6BF0 /* StarsBlinkView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarsBlinkView.swift; sourceTree = "<group>"; };
 		D3944AAE2A9923A7009F6BF0 /* RectRotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RectRotationView.swift; sourceTree = "<group>"; };
 		D3944AAF2A9923A7009F6BF0 /* RingsAnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RingsAnimationView.swift; sourceTree = "<group>"; };
@@ -43,6 +48,7 @@
 		D3944AB62A9923A8009F6BF0 /* BatteryAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatteryAnimation.swift; sourceTree = "<group>"; };
 		D3944AC12A992800009F6BF0 /* SpiralView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpiralView.swift; sourceTree = "<group>"; };
 		D3944AC32A9928A8009F6BF0 /* FireworksView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireworksView.swift; sourceTree = "<group>"; };
+		D39976D92B68159D0015F88B /* DotsAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotsAnimationView.swift; sourceTree = "<group>"; };
 		D3A8B6672A965F69005E69D4 /* legendary-Animo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "legendary-Animo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3A8B66A2A965F69005E69D4 /* legendary_AnimoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = legendary_AnimoApp.swift; sourceTree = "<group>"; };
 		D3A8B66C2A965F69005E69D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -81,6 +87,9 @@
 				D3944AC12A992800009F6BF0 /* SpiralView.swift */,
 				D3944AC32A9928A8009F6BF0 /* FireworksView.swift */,
 				D30329142ACB440200A43DEB /* CirclesRotationsView.swift */,
+				D39976D92B68159D0015F88B /* DotsAnimationView.swift */,
+				D34AA3B82BCBA6A90076D619 /* RotatingDotsView.swift */,
+				D34674932BDAB5B600D967E2 /* BarLoaderView.swift */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -196,15 +205,18 @@
 			files = (
 				D3944ABE2A9923A8009F6BF0 /* TimerView.swift in Sources */,
 				D3944AB92A9923A8009F6BF0 /* RingsAnimationView.swift in Sources */,
+				D34AA3B92BCBA6A90076D619 /* RotatingDotsView.swift in Sources */,
 				D3A8B66D2A965F69005E69D4 /* ContentView.swift in Sources */,
 				D3A8B68D2A96778D005E69D4 /* Row.swift in Sources */,
 				D3944AC02A9923A8009F6BF0 /* BatteryAnimation.swift in Sources */,
+				D39976DA2B68159D0015F88B /* DotsAnimationView.swift in Sources */,
 				D3944ABA2A9923A8009F6BF0 /* TriangleAnimation.swift in Sources */,
 				D3944ABF2A9923A8009F6BF0 /* TriangleMultiShapeUIView.swift in Sources */,
 				D3A8B66B2A965F69005E69D4 /* legendary_AnimoApp.swift in Sources */,
 				D3944ABB2A9923A8009F6BF0 /* CiclesTransView3D.swift in Sources */,
 				D3944AB72A9923A8009F6BF0 /* StarsBlinkView.swift in Sources */,
 				D3944AB82A9923A8009F6BF0 /* RectRotationView.swift in Sources */,
+				D34674942BDAB5B600D967E2 /* BarLoaderView.swift in Sources */,
 				D3944ABD2A9923A8009F6BF0 /* DotsAnimPreview.swift in Sources */,
 				D3EEB55E2A9A0E0A00528701 /* CirclesView.swift in Sources */,
 				D3944AC42A9928A8009F6BF0 /* FireworksView.swift in Sources */,

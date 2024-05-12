@@ -24,6 +24,8 @@ struct ContentView: View {
         case spiral
         case fireworks
         case loader
+        case hue
+        case bar
     }
     
     let rows:[RowView] = [
@@ -40,7 +42,9 @@ struct ContentView: View {
         RowView(icon: "✨", title: "Blinking Stars Animation", desc: "Control the birth rate, hue, and unleash your creative freedom."),
         RowView(icon: "꩜", title: "Spriral Animation", desc: "Control the birth rate, hue, and unleash your creative freedom."),
         RowView(icon: "🔥", title: "Fireworks Animation", desc: "Control the birth rate, hue, and unleash your creative freedom."),
-        RowView(icon: "✷", title: "Loader Animation v1", desc: "a smooth loader animation using timingCurve")
+        RowView(icon: "✷", title: "Loader Animation v1", desc: "Magnetic animation with hue rotation."),
+        RowView(icon: "🧲", title: "Magnetic dots Animation", desc: "Magnetic animation with hue rotation with 2 variations."),
+        RowView(icon: "⿲", title: "Bar Loader View", desc: "a inderminant loader in SwiftUI")
         ]
         
     @State private var selection: Int? = 0
@@ -112,6 +116,12 @@ struct ContentView: View {
                 .preferredColorScheme(.dark)
         case nil:
             StarsBlinkView()
+        case .hue:
+            DotsAnimationView()
+                .preferredColorScheme(.dark)
+        case .bar:
+            BarLoaderView()
+                .preferredColorScheme(.dark)
         }
     }
     
