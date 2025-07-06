@@ -34,4 +34,4 @@ Exploring SwiftUI animations with 3D, Linear, Fluid, gradient and other kind of 
 ![](gifs/BlinkingStarsAnimationSwiftUI.gif)
 
 # Even More
-![Explore](https://www.patreon.com/c/iamvishal16)
+[Explore](https://www.patreon.com/c/iamvishal16)
