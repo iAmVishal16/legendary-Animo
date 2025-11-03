@@ -11,7 +11,7 @@ import SwiftUI
 struct legendary_AnimoApp: App {
     var body: some Scene {
         WindowGroup {
-            BarLoaderView()
+            FallingChipsView()
                 .preferredColorScheme(.dark)
         }
     }

@@ -23,6 +23,11 @@
 		D3944AC22A992800009F6BF0 /* SpiralView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3944AC12A992800009F6BF0 /* SpiralView.swift */; };
 		D3944AC42A9928A8009F6BF0 /* FireworksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3944AC32A9928A8009F6BF0 /* FireworksView.swift */; };
 		D39976DA2B68159D0015F88B /* DotsAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39976D92B68159D0015F88B /* DotsAnimationView.swift */; };
+		D3A0B8872EB91C0C009C2D35 /* FloatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A0B8842EB91C0C009C2D35 /* FloatingView.swift */; };
+		D3A0B8882EB91C0C009C2D35 /* FullScreenDotFieldContinuous.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A0B8852EB91C0C009C2D35 /* FullScreenDotFieldContinuous.swift */; };
+		D3A0B8892EB91C0C009C2D35 /* MultiOrbitView+TwoFinger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A0B8862EB91C0C009C2D35 /* MultiOrbitView+TwoFinger.swift */; };
+		D3A0B88A2EB91C0C009C2D35 /* FlashingButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A0B8832EB91C0C009C2D35 /* FlashingButtonView.swift */; };
+		D3A0B88B2EB91C0C009C2D35 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A0B8822EB91C0C009C2D35 /* Buttons.swift */; };
 		D3A8B66B2A965F69005E69D4 /* legendary_AnimoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A8B66A2A965F69005E69D4 /* legendary_AnimoApp.swift */; };
 		D3A8B66D2A965F69005E69D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A8B66C2A965F69005E69D4 /* ContentView.swift */; };
 		D3A8B66F2A965F6B005E69D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3A8B66E2A965F6B005E69D4 /* Assets.xcassets */; };
@@ -30,6 +35,8 @@
 		D3A8B68D2A96778D005E69D4 /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A8B68C2A96778D005E69D4 /* Row.swift */; };
 		D3A8B68F2A97C813005E69D4 /* gifs in Resources */ = {isa = PBXBuildFile; fileRef = D3A8B68E2A97C813005E69D4 /* gifs */; };
 		D3EEB55E2A9A0E0A00528701 /* CirclesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EEB55D2A9A0E0A00528701 /* CirclesView.swift */; };
+		D3F48AF42E8937BE0011A526 /* Circles3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F48AF32E8937B40011A526 /* Circles3D.swift */; };
+		D3F48BC22E8D27050011A526 /* ChipsDrags.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F48BC12E8D27000011A526 /* ChipsDrags.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +56,11 @@
 		D3944AC12A992800009F6BF0 /* SpiralView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpiralView.swift; sourceTree = "<group>"; };
 		D3944AC32A9928A8009F6BF0 /* FireworksView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireworksView.swift; sourceTree = "<group>"; };
 		D39976D92B68159D0015F88B /* DotsAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotsAnimationView.swift; sourceTree = "<group>"; };
+		D3A0B8822EB91C0C009C2D35 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		D3A0B8832EB91C0C009C2D35 /* FlashingButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashingButtonView.swift; sourceTree = "<group>"; };
+		D3A0B8842EB91C0C009C2D35 /* FloatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingView.swift; sourceTree = "<group>"; };
+		D3A0B8852EB91C0C009C2D35 /* FullScreenDotFieldContinuous.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenDotFieldContinuous.swift; sourceTree = "<group>"; };
+		D3A0B8862EB91C0C009C2D35 /* MultiOrbitView+TwoFinger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MultiOrbitView+TwoFinger.swift"; sourceTree = "<group>"; };
 		D3A8B6672A965F69005E69D4 /* legendary-Animo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "legendary-Animo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3A8B66A2A965F69005E69D4 /* legendary_AnimoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = legendary_AnimoApp.swift; sourceTree = "<group>"; };
 		D3A8B66C2A965F69005E69D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -57,6 +69,8 @@
 		D3A8B68C2A96778D005E69D4 /* Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row.swift; sourceTree = "<group>"; };
 		D3A8B68E2A97C813005E69D4 /* gifs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gifs; sourceTree = SOURCE_ROOT; };
 		D3EEB55D2A9A0E0A00528701 /* CirclesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CirclesView.swift; sourceTree = "<group>"; };
+		D3F48AF32E8937B40011A526 /* Circles3D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circles3D.swift; sourceTree = "<group>"; };
+		D3F48BC12E8D27000011A526 /* ChipsDrags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipsDrags.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +87,13 @@
 		D3944AAC2A992378009F6BF0 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				D3A0B8822EB91C0C009C2D35 /* Buttons.swift */,
+				D3A0B8832EB91C0C009C2D35 /* FlashingButtonView.swift */,
+				D3A0B8842EB91C0C009C2D35 /* FloatingView.swift */,
+				D3A0B8852EB91C0C009C2D35 /* FullScreenDotFieldContinuous.swift */,
+				D3A0B8862EB91C0C009C2D35 /* MultiOrbitView+TwoFinger.swift */,
+				D3F48BC12E8D27000011A526 /* ChipsDrags.swift */,
+				D3F48AF32E8937B40011A526 /* Circles3D.swift */,
 				D3944AB62A9923A8009F6BF0 /* BatteryAnimation.swift */,
 				D3944AB12A9923A8009F6BF0 /* CiclesTransView3D.swift */,
 				D3EEB55D2A9A0E0A00528701 /* CirclesView.swift */,
@@ -205,6 +226,13 @@
 			files = (
 				D3944ABE2A9923A8009F6BF0 /* TimerView.swift in Sources */,
 				D3944AB92A9923A8009F6BF0 /* RingsAnimationView.swift in Sources */,
+				D3F48AF42E8937BE0011A526 /* Circles3D.swift in Sources */,
+				D3A0B8872EB91C0C009C2D35 /* FloatingView.swift in Sources */,
+				D3A0B8882EB91C0C009C2D35 /* FullScreenDotFieldContinuous.swift in Sources */,
+				D3A0B8892EB91C0C009C2D35 /* MultiOrbitView+TwoFinger.swift in Sources */,
+				D3A0B88A2EB91C0C009C2D35 /* FlashingButtonView.swift in Sources */,
+				D3A0B88B2EB91C0C009C2D35 /* Buttons.swift in Sources */,
+				D3F48BC22E8D27050011A526 /* ChipsDrags.swift in Sources */,
 				D34AA3B92BCBA6A90076D619 /* RotatingDotsView.swift in Sources */,
 				D3A8B66D2A965F69005E69D4 /* ContentView.swift in Sources */,
 				D3A8B68D2A96778D005E69D4 /* Row.swift in Sources */,

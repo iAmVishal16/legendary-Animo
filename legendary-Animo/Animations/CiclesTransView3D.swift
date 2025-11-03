@@ -159,8 +159,6 @@ struct CiclesTransView3D_Previews: PreviewProvider {
 // #pragma MARK: Optimized Code
 struct CiclesTransViewOptimizeView: View {
     @State private var animate = false
-    @Binding var animType: ContentView.AnimationType
-    @Binding var isActive: Bool
 
     var body: some View {
         ZStack {
@@ -183,10 +181,7 @@ struct CiclesTransViewOptimizeView: View {
         .onAppear {
             animate.toggle()
         }
-        .onTapGesture {
-            animType = .rings
-            isActive = true
-        }
+        
     }
     
     private func createCircle(width: CGFloat, dash: [CGFloat], delay: Double) -> some View {
@@ -206,7 +201,7 @@ struct CiclesTransViewOptimizeView: View {
 
 struct CiclesTransViewOptimize_Previews: PreviewProvider {
     static var previews: some View {
-        CiclesTransViewOptimizeView(animType: .constant(.rings), isActive: .constant(true))
+        CiclesTransViewOptimizeView()
             .preferredColorScheme(.dark)
     }
 }
