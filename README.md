@@ -87,6 +87,6 @@ DemoItem(
 Your demo appears at the top automatically and routes correctly.
 
 ## Credits
-Designed and built by Vishal Paliwal ([@iamvishal16](https://twitter.com/iamvishal16)).
+Designed and built by Vishal Paliwal ([@iamvishal16](https://twitter.com/iamvishal16_ios)).
 
 These are snippets of UI experiments and micro‑interactions using SwiftUI / UIKit / Metal. Questions or ideas? Drop a note at `paliwalvishal16@gmail.com`.

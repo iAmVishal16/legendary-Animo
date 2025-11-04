@@ -251,4 +251,3 @@ struct ContentView: View {
     ContentView()
         .preferredColorScheme(.dark)
 }
-
