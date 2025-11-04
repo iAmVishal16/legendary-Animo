@@ -40,6 +40,7 @@ struct MicroInteractionButton: View {
     @State private var rotation: Double = 0
     @State private var isAnimating: Bool = false
     @State private var showLoadingVisuals: Bool = false
+    @Environment(\.colorScheme) private var colorScheme
     
     var body: some View {
         Button(action: handleTap) {
@@ -49,7 +50,7 @@ struct MicroInteractionButton: View {
                     .frame(width: shapeWidth, height: shapeHeight)
                 if state == .loading && showLoadingVisuals {
                     ProgressView()
-                        .progressViewStyle(CircularProgressViewStyle(tint: .white))
+                        .progressViewStyle(CircularProgressViewStyle(tint: foregroundColor))
                         .scaleEffect(1.2)
                 } else if state == .loading {
                 } else if state == .success {
@@ -63,9 +64,9 @@ struct MicroInteractionButton: View {
                 } else {
                     HStack {
                         Image(systemName: icon)
-                            .foregroundColor(.white)
+                            .foregroundColor(foregroundColor)
                         Text(title)
-                            .foregroundColor(.white)
+                            .foregroundColor(foregroundColor)
                             .fontWeight(.semibold)
                     }
                 }
@@ -110,17 +111,23 @@ struct MicroInteractionButton: View {
     }
     private var backgroundColor: Color {
         switch state {
-        case .idle: return .black
-        case .loading: return .black
-        case .success: return .green
-        case .error: return .red
+        case .idle, .loading:
+            // Adaptive background: dark in light mode, light in dark mode
+            return colorScheme == .dark ? Color(.systemGray6) : Color(.label)
+        case .success:
+            return .green
+        case .error:
+            return .red
         }
     }
-    private var borderColor: Color {
-        Color.clear // No border needed
-    }
-    private var borderStyle: StrokeStyle {
-        StrokeStyle(lineWidth: 0)
+    private var foregroundColor: Color {
+        switch state {
+        case .idle, .loading:
+            // Adaptive foreground: light in dark mode, dark in light mode (inverse of background)
+            return colorScheme == .dark ? Color(.label) : Color(.systemBackground)
+        case .success, .error:
+            return .white // White on green/red is always readable
+        }
     }
     
     private func handleTap() {
@@ -157,21 +164,34 @@ struct MicroInteractionButton: View {
 struct MicroInteractionButton_Previews: PreviewProvider {
     static var previews: some View {
         VStack(spacing: 24) {
-            
-//          Spacer()
-            
             MicroInteractionButton(icon: "applelogo", title: "Sign in with Apple") {
                 try? await Task.sleep(nanoseconds: 2_000_000_000)
             }
             .padding()
-            MicroInteractionButton(icon: "applelogo", title: "Sign in with Apple") {
-                try? await Task.sleep(nanoseconds: 2_000_000_000)
+            MicroInteractionButton(icon: "heart.fill", title: "Like") {
+                try? await Task.sleep(nanoseconds: 1_500_000_000)
                 throw NSError(domain: "Test", code: 1)
             }
             .padding()
         }
         .background(Color(.systemBackground))
         .previewLayout(.sizeThatFits)
+        .preferredColorScheme(.light)
+        
+        VStack(spacing: 24) {
+            MicroInteractionButton(icon: "applelogo", title: "Sign in with Apple") {
+                try? await Task.sleep(nanoseconds: 2_000_000_000)
+            }
+            .padding()
+            MicroInteractionButton(icon: "heart.fill", title: "Like") {
+                try? await Task.sleep(nanoseconds: 1_500_000_000)
+                throw NSError(domain: "Test", code: 1)
+            }
+            .padding()
+        }
+        .background(Color(.systemBackground))
+        .previewLayout(.sizeThatFits)
+        .preferredColorScheme(.dark)
     }
 }
 #endif
