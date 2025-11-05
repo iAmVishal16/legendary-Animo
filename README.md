@@ -1,7 +1,9 @@
 # Legendary Animo
 
 Crafted micro-interactions and animation snippets for iOS using SwiftUI, UIKit, SpriteKit and Metal. Drop-in views you can reuse in your next app.
-
+<p align= "center">
+  <img src="https://github.com/iAmVishal16/legendary-Animo/blob/main/gifs/users_clir16ilg00u6rd0151tuh3m8_eSyWGs6XuRYCNonu-PlusToCross%20(1).gif"/>
+</p>
 <p align="center">
   <img src="gifs/Simulator_Screen_Recording_-_iPhone_14_Pro_-_2023-04-04_at_11_31_56_AdobeExpress.gif" width="220" />
   <img src="gifs/Screen_Recording_2023-04-22_at_9_03_32_PM_AdobeExpress.gif" width="220" />
