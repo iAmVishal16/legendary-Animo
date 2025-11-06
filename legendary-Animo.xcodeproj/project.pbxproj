@@ -28,6 +28,8 @@
 		D3A0B8892EB91C0C009C2D35 /* MultiOrbitView+TwoFinger.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A0B8862EB91C0C009C2D35 /* MultiOrbitView+TwoFinger.swift */; };
 		D3A0B88A2EB91C0C009C2D35 /* FlashingButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A0B8832EB91C0C009C2D35 /* FlashingButtonView.swift */; };
 		D3A0B88B2EB91C0C009C2D35 /* Buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A0B8822EB91C0C009C2D35 /* Buttons.swift */; };
+		D3A0BA402EBBAFEB009C2D35 /* HapticFeedback.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A0BA3F2EBBAFEB009C2D35 /* HapticFeedback.swift */; };
+		D3A0BA412EBBAFEB009C2D35 /* FullScreenDotFieldWave.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A0BA3E2EBBAFEB009C2D35 /* FullScreenDotFieldWave.swift */; };
 		D3A8B66B2A965F69005E69D4 /* legendary_AnimoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A8B66A2A965F69005E69D4 /* legendary_AnimoApp.swift */; };
 		D3A8B66D2A965F69005E69D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A8B66C2A965F69005E69D4 /* ContentView.swift */; };
 		D3A8B66F2A965F6B005E69D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3A8B66E2A965F6B005E69D4 /* Assets.xcassets */; };
@@ -61,6 +63,8 @@
 		D3A0B8842EB91C0C009C2D35 /* FloatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingView.swift; sourceTree = "<group>"; };
 		D3A0B8852EB91C0C009C2D35 /* FullScreenDotFieldContinuous.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenDotFieldContinuous.swift; sourceTree = "<group>"; };
 		D3A0B8862EB91C0C009C2D35 /* MultiOrbitView+TwoFinger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MultiOrbitView+TwoFinger.swift"; sourceTree = "<group>"; };
+		D3A0BA3E2EBBAFEB009C2D35 /* FullScreenDotFieldWave.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenDotFieldWave.swift; sourceTree = "<group>"; };
+		D3A0BA3F2EBBAFEB009C2D35 /* HapticFeedback.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticFeedback.swift; sourceTree = "<group>"; };
 		D3A8B6672A965F69005E69D4 /* legendary-Animo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "legendary-Animo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3A8B66A2A965F69005E69D4 /* legendary_AnimoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = legendary_AnimoApp.swift; sourceTree = "<group>"; };
 		D3A8B66C2A965F69005E69D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -87,6 +91,8 @@
 		D3944AAC2A992378009F6BF0 /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				D3A0BA3E2EBBAFEB009C2D35 /* FullScreenDotFieldWave.swift */,
+				D3A0BA3F2EBBAFEB009C2D35 /* HapticFeedback.swift */,
 				D3A0B8822EB91C0C009C2D35 /* Buttons.swift */,
 				D3A0B8832EB91C0C009C2D35 /* FlashingButtonView.swift */,
 				D3A0B8842EB91C0C009C2D35 /* FloatingView.swift */,
@@ -233,6 +239,8 @@
 				D3A0B88A2EB91C0C009C2D35 /* FlashingButtonView.swift in Sources */,
 				D3A0B88B2EB91C0C009C2D35 /* Buttons.swift in Sources */,
 				D3F48BC22E8D27050011A526 /* ChipsDrags.swift in Sources */,
+				D3A0BA402EBBAFEB009C2D35 /* HapticFeedback.swift in Sources */,
+				D3A0BA412EBBAFEB009C2D35 /* FullScreenDotFieldWave.swift in Sources */,
 				D34AA3B92BCBA6A90076D619 /* RotatingDotsView.swift in Sources */,
 				D3A8B66D2A965F69005E69D4 /* ContentView.swift in Sources */,
 				D3A8B68D2A96778D005E69D4 /* Row.swift in Sources */,
@@ -382,11 +390,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_ASSET_PATHS = "\"legendary-Animo/Preview Content\"";
 				DEVELOPMENT_TEAM = RCBAHMPTTF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = iamvishal16;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -412,11 +422,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 1.0;
 				DEVELOPMENT_ASSET_PATHS = "\"legendary-Animo/Preview Content\"";
 				DEVELOPMENT_TEAM = RCBAHMPTTF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = iamvishal16;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -1,20 +1,22 @@
 //
-//  FullScreenDotFieldContinuous.swift
+//  FullScreenDotFieldWave.swift
 //  legendary-Animo
 //
-//  Created by Vishal Paliwal on 02/10/2025.
+//  Created by Vishal Paliwal on 04/10/2025.
 //
 
 import SwiftUI
 import SpriteKit
 
-struct FullScreenDotFieldContinuous: View {
-    var dotSpacing: CGFloat = 24
+struct FullScreenDotFieldWave: View {
+    var dotSpacing: CGFloat = 20
     var dotRadius: CGFloat = 3.5
-    var influenceRadius: CGFloat = 90
-    var smoothing: CGFloat = 12
+    var influenceRadius: CGFloat = 170
+    var stiffness: CGFloat = 16
+    var damping: CGFloat = 6
+    var waveForce: CGFloat = 5200
     
-    @State private var scene: FullScreenDotFieldContinuousScene?
+    @State private var scene: FullScreenDotFieldWaveScene?
     
     var body: some View {
         GeometryReader { proxy in
@@ -33,7 +35,7 @@ struct FullScreenDotFieldContinuous: View {
             .gesture(
                 DragGesture(minimumDistance: 0)
                     .onChanged { value in
-                        HapticFeedback.lightImpact()
+                        HapticFeedback.waveImpact()
                         let location = convertToSceneCoordinates(location: value.location, in: proxy.size)
                         scene?.handleDragChanged(to: location)
                     }
@@ -48,7 +50,9 @@ struct FullScreenDotFieldContinuous: View {
                 scene?.dotSpacing = dotSpacing
                 scene?.dotRadius = dotRadius
                 scene?.influenceRadius = influenceRadius
-                scene?.smoothing = smoothing
+                scene?.stiffness = stiffness
+                scene?.damping = damping
+                scene?.waveForce = waveForce
                 scene?.updateSize(newSize)
             }
         }
@@ -56,13 +60,15 @@ struct FullScreenDotFieldContinuous: View {
     
     private func setupScene(size: CGSize) {
         guard scene == nil else { return }
-        let newScene = FullScreenDotFieldContinuousScene()
+        let newScene = FullScreenDotFieldWaveScene()
         newScene.scaleMode = .resizeFill
         newScene.size = size
         newScene.dotSpacing = dotSpacing
         newScene.dotRadius = dotRadius
         newScene.influenceRadius = influenceRadius
-        newScene.smoothing = smoothing
+        newScene.stiffness = stiffness
+        newScene.damping = damping
+        newScene.waveForce = waveForce
         scene = newScene
     }
     
@@ -74,16 +80,22 @@ struct FullScreenDotFieldContinuous: View {
     }
 }
 
-class FullScreenDotFieldContinuousScene: SKScene {
-    var dotSpacing: CGFloat = 24
+class FullScreenDotFieldWaveScene: SKScene {
+    var dotSpacing: CGFloat = 20
     var dotRadius: CGFloat = 3.5
-    var influenceRadius: CGFloat = 90
-    var smoothing: CGFloat = 12
+    var influenceRadius: CGFloat = 170
+    var stiffness: CGFloat = 16
+    var damping: CGFloat = 6
+    var waveForce: CGFloat = 5200
     
     private let container = SKNode()
     private var dots: [SKShapeNode] = []
     private var originalPositions: [CGPoint] = []
+    private var displacements: [CGVector] = []
+    private var velocities: [CGVector] = []
     private var dragLocation: CGPoint?
+    private var previousDragLocation: CGPoint?
+    private var dragVelocity: CGVector = .zero
     private var lastUpdateTime: TimeInterval = 0
     
     private let gradient: [(angle: CGFloat, color: SKColor)] = [
@@ -117,24 +129,36 @@ class FullScreenDotFieldContinuousScene: SKScene {
     }
     
     func handleDragChanged(to location: CGPoint) {
+        if let previous = dragLocation {
+            dragVelocity = CGVector(dx: location.x - previous.x, dy: location.y - previous.y)
+        } else if let previous = previousDragLocation {
+            dragVelocity = CGVector(dx: location.x - previous.x, dy: location.y - previous.y)
+        } else {
+            dragVelocity = .zero
+        }
+        previousDragLocation = location
         dragLocation = location
     }
     
     func handleDragEnded() {
         dragLocation = nil
+        previousDragLocation = nil
+        dragVelocity = .zero
     }
     
     private func rebuildGrid() {
         container.removeAllChildren()
         dots.removeAll()
         originalPositions.removeAll()
+        displacements.removeAll()
+        velocities.removeAll()
         
         guard size.width > 0, size.height > 0 else { return }
         
-        let columns = max(Int(ceil(size.width / dotSpacing)), 1) + 1
-        let rows = max(Int(ceil(size.height / dotSpacing)), 1) + 1
-        let startX = -size.width / 2
-        let startY = -size.height / 2
+        let columns = max(Int(ceil(size.width / dotSpacing)), 1) + 2
+        let rows = max(Int(ceil(size.height / dotSpacing)), 1) + 2
+        let startX = -size.width / 2 - dotSpacing
+        let startY = -size.height / 2 - dotSpacing
         
         for row in 0..<rows {
             let y = startY + CGFloat(row) * dotSpacing
@@ -148,6 +172,8 @@ class FullScreenDotFieldContinuousScene: SKScene {
                 container.addChild(dot)
                 dots.append(dot)
                 originalPositions.append(position)
+                displacements.append(.zero)
+                velocities.append(.zero)
             }
         }
     }
@@ -161,34 +187,65 @@ class FullScreenDotFieldContinuousScene: SKScene {
             deltaTime = CGFloat(min(currentTime - lastUpdateTime, 1 / 30))
         }
         lastUpdateTime = currentTime
-
-        let maximumDisplacement = influenceRadius * 0.9
+        
+        if let dragLocation {
+            applyWaveImpulse(center: dragLocation, deltaTime: deltaTime)
+        }
+        
+        integrateMotion(deltaTime: deltaTime)
+    }
+    
+    private func applyWaveImpulse(center: CGPoint, deltaTime: CGFloat) {
         let radius = influenceRadius
         let radiusSquared = radius * radius
-        let factor = min(deltaTime * smoothing, 1)
+        let forceScale = waveForce * deltaTime
+        let directionalMagnitude = dragVelocity.length
+        let flowDirection = directionalMagnitude > 0 ? CGVector(dx: dragVelocity.dx / directionalMagnitude, dy: dragVelocity.dy / directionalMagnitude) : .zero
         
-        for (index, dot) in dots.enumerated() {
+        for index in dots.indices {
             let origin = originalPositions[index]
-            let target: CGPoint
-            if let dragLocation {
-                let dx = origin.x - dragLocation.x
-                let dy = origin.y - dragLocation.y
-                let distanceSquared = dx * dx + dy * dy
-                if distanceSquared < radiusSquared {
-                    let distance = max(CGFloat(sqrt(distanceSquared)), 0.001)
-                    let direction = CGVector(dx: dx / distance, dy: dy / distance)
-                    let displacementAmount = (radius - distance) / radius * maximumDisplacement
-                    target = CGPoint(
-                        x: origin.x + direction.dx * displacementAmount,
-                        y: origin.y + direction.dy * displacementAmount
-                    )
-                } else {
-                    target = origin
-                }
-            } else {
-                target = origin
+            let dx = origin.x - center.x
+            let dy = origin.y - center.y
+            let distanceSquared = dx * dx + dy * dy
+            guard distanceSquared < radiusSquared else { continue }
+            let distance = max(CGFloat(sqrt(distanceSquared)), 0.0005)
+            let normalized = CGVector(dx: dx / distance, dy: dy / distance)
+            let falloff = cos((distance / radius) * (.pi / 2))
+            let radialImpulse = (falloff * falloff) * forceScale
+            velocities[index].dx += normalized.dx * radialImpulse
+            velocities[index].dy += normalized.dy * radialImpulse
+
+            if directionalMagnitude > 0 {
+                let tangential = CGVector(dx: -normalized.dy, dy: normalized.dx)
+                let alignment = tangential.dot(flowDirection)
+                let directionalImpulse = alignment * falloff * forceScale * 1.35 * Swift.min(directionalMagnitude / (dotSpacing + 1), 4)
+                velocities[index].dx += tangential.dx * directionalImpulse
+                velocities[index].dy += tangential.dy * directionalImpulse
             }
-            dot.position = dot.position.interpolated(to: target, factor: factor)
+        }
+    }
+    
+    private func integrateMotion(deltaTime: CGFloat) {
+        let stiffness = self.stiffness
+        let damping = self.damping
+        let velocityDamping = CGFloat(pow(0.9, Double(deltaTime * 60)))
+        for index in dots.indices {
+            var displacement = displacements[index]
+            var velocity = velocities[index]
+            let accelerationX = -stiffness * displacement.dx - damping * velocity.dx
+            let accelerationY = -stiffness * displacement.dy - damping * velocity.dy
+            velocity.dx += accelerationX * deltaTime
+            velocity.dy += accelerationY * deltaTime
+            velocity.dx *= velocityDamping
+            velocity.dy *= velocityDamping
+            displacement.dx += velocity.dx * deltaTime
+            displacement.dy += velocity.dy * deltaTime
+            displacement.dx = displacement.dx.clamped(to: -influenceRadius * 0.85, influenceRadius * 0.85)
+            displacement.dy = displacement.dy.clamped(to: -influenceRadius * 0.85, influenceRadius * 0.85)
+            displacements[index] = displacement
+            velocities[index] = velocity
+            let origin = originalPositions[index]
+            dots[index].position = CGPoint(x: origin.x + displacement.dx, y: origin.y + displacement.dy)
         }
     }
     
@@ -204,16 +261,7 @@ class FullScreenDotFieldContinuousScene: SKScene {
         let r = start.color.rgba.red + (end.color.rgba.red - start.color.rgba.red) * percent
         let g = start.color.rgba.green + (end.color.rgba.green - start.color.rgba.green) * percent
         let b = start.color.rgba.blue + (end.color.rgba.blue - start.color.rgba.blue) * percent
-        return SKColor(red: r, green: g, blue: b, alpha: 1.0)
-    }
-}
-
-private extension CGPoint {
-    func interpolated(to target: CGPoint, factor: CGFloat) -> CGPoint {
-        CGPoint(
-            x: x + (target.x - x) * factor,
-            y: y + (target.y - y) * factor
-        )
+        return UIColor(red: r, green: g, blue: b, alpha: 1.0)
     }
 }
 
@@ -224,32 +272,30 @@ private extension CGFloat {
         while value > 2 * .pi { value -= 2 * .pi }
         return value
     }
+    
+    func clamped(to minValue: CGFloat, _ maxValue: CGFloat) -> CGFloat {
+        Swift.min(Swift.max(self, minValue), maxValue)
+    }
 }
 
-// MARK: - Helpers
-//private struct HapticFeedback {
-//    static func gentleImpact() {
-//        let generator = UIImpactFeedbackGenerator(style: .soft)
-//        generator.impactOccurred(intensity: 0.6)
-//    }
-//}
-//
-//private extension SKColor {
-//    var rgba: (red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) {
-//        var r: CGFloat = 0, g: CGFloat = 0, b: CGFloat = 0, a: CGFloat = 0
-//        #if os(iOS) || os(tvOS)
-//        self.getRed(&r, green: &g, blue: &b, alpha: &a)
-//        #elseif os(macOS)
-//        self.usingColorSpace(.sRGB)?.getRed(&r, green: &g, blue: &b, alpha: &a)
-//        #endif
-//        return (r, g, b, a)
-//    }
-//}
+private extension CGVector {
+    var length: CGFloat { sqrt(dx * dx + dy * dy) }
+    func dot(_ other: CGVector) -> CGFloat { dx * other.dx + dy * other.dy }
+}
+
+extension SKColor {
+    var rgba: (red: CGFloat, green: CGFloat, blue: CGFloat, alpha: CGFloat) {
+        var red: CGFloat = 0
+        var green: CGFloat = 0
+        var blue: CGFloat = 0
+        var alpha: CGFloat = 0
+        getRed(&red, green: &green, blue: &blue, alpha: &alpha)
+        return (red, green, blue, alpha)
+    }
+}
 
 #Preview {
-    FullScreenDotFieldContinuous()
-        .ignoresSafeArea()
+    FullScreenDotFieldWave()
         .preferredColorScheme(.dark)
+        .ignoresSafeArea()
 }
-
-
