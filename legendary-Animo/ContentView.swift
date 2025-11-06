@@ -69,9 +69,10 @@ struct ContentView: View {
             DemoItem(row: RowView(icon: "⚡", title: "Flashing Button", desc: "Shimmer effect button"), destination: wrappedDestination {
                 FlashingView()
             }, date: "May 3, 2025", hasDateHeader: false), // No date header in file
-            DemoItem(row: RowView(icon: "⚪️", title: "Dot Field (Interactive)", desc: "Full-screen SpriteKit dot field"), destination: wrappedDestination {
-                FullScreenDotFieldContinuous()
-            }, date: "May 10, 2025", hasDateHeader: true),
+            DemoItem(row: RowView(icon: "⚪️", title: "Dot Field Wave (Interactive)", desc: "Physics-based wave propagation"), destination: wrappedDestination {
+                FullScreenDotFieldWave()
+                    .ignoresSafeArea()
+            }, date: "Oct 4, 2025", hasDateHeader: true),
             DemoItem(row: RowView(icon: "🫧", title: "Floating View", desc: "Organic floating particles"), destination: wrappedDestination {
                 FloatingView()
             }, date: "May 1, 2025", hasDateHeader: true),
