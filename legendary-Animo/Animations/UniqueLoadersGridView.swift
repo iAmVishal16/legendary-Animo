@@ -1,3 +1,10 @@
+//
+//  UniqueLoadersGridView.swift
+//  legendary-Animo
+//
+//  Created by Vishal Paliwal on 08/11/25.
+//
+
 import SwiftUI
 
 /// A container view that showcases a collection of bespoke loading animations inside a dark themed grid.
