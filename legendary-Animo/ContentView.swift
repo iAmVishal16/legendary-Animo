@@ -45,6 +45,13 @@ struct ContentView: View {
     // Latest first (add new items at the top)
     private var demos: [DemoItem] {
         [
+            // Latest animations
+            DemoItem(row: RowView(icon: "🌀", title: "Parallax Carousel", desc: "Drag the 3D ring of photos with parallax"), destination: wrappedDestination {
+                ParallaxCarouselView()
+            }, date: "Nov 8, 2025", hasDateHeader: false),
+            DemoItem(row: RowView(icon: "🎛️", title: "Unique Loaders Grid", desc: "Multiple CSS-inspired loaders rebuilt in SwiftUI"), destination: wrappedDestination {
+                UniqueLoadersGridView()
+            }, date: "Nov 8, 2025", hasDateHeader: false),
             // Missing animations added
             DemoItem(row: RowView(icon: "🪐", title: "Multi Orbit View", desc: "Interactive planet & satellite orbits"), destination: wrappedDestination {
                 MultiOrbitView(satellites: (0..<3).map { _ in Satellite.random() }, planetRadius: 1.5)

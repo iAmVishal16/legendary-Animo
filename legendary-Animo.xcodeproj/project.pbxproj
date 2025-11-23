@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D30329152ACB440300A43DEB /* CirclesRotationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D30329142ACB440200A43DEB /* CirclesRotationsView.swift */; };
 		D34674942BDAB5B600D967E2 /* BarLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34674932BDAB5B600D967E2 /* BarLoaderView.swift */; };
+		D3B8A2022F2CE2C90051D1D3 /* ParallaxCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B8A2012F2CE2C90051D1D3 /* ParallaxCarouselView.swift */; };
 		D34AA3B92BCBA6A90076D619 /* RotatingDotsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D34AA3B82BCBA6A90076D619 /* RotatingDotsView.swift */; };
 		D3944AB72A9923A8009F6BF0 /* StarsBlinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3944AAD2A9923A7009F6BF0 /* StarsBlinkView.swift */; };
 		D3944AB82A9923A8009F6BF0 /* RectRotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3944AAE2A9923A7009F6BF0 /* RectRotationView.swift */; };
@@ -36,6 +37,7 @@
 		D3A8B6722A965F6B005E69D4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3A8B6712A965F6B005E69D4 /* Preview Assets.xcassets */; };
 		D3A8B68D2A96778D005E69D4 /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3A8B68C2A96778D005E69D4 /* Row.swift */; };
 		D3A8B68F2A97C813005E69D4 /* gifs in Resources */ = {isa = PBXBuildFile; fileRef = D3A8B68E2A97C813005E69D4 /* gifs */; };
+		D3B5A0022F2B3CDE00A93651 /* UniqueLoadersGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3B5A0012F2B3CDE00A93651 /* UniqueLoadersGridView.swift */; };
 		D3EEB55E2A9A0E0A00528701 /* CirclesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3EEB55D2A9A0E0A00528701 /* CirclesView.swift */; };
 		D3F48AF42E8937BE0011A526 /* Circles3D.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F48AF32E8937B40011A526 /* Circles3D.swift */; };
 		D3F48BC22E8D27050011A526 /* ChipsDrags.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F48BC12E8D27000011A526 /* ChipsDrags.swift */; };
@@ -59,6 +61,10 @@
 		D3944AC32A9928A8009F6BF0 /* FireworksView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FireworksView.swift; sourceTree = "<group>"; };
 		D39976D92B68159D0015F88B /* DotsAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotsAnimationView.swift; sourceTree = "<group>"; };
 		D3A0B8822EB91C0C009C2D35 /* Buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Buttons.swift; sourceTree = "<group>"; };
+		D3B8A2002F2CE2C00051D1D3 /* Carousels */ = {isa = PBXGroup; children = (
+				D3B8A2012F2CE2C90051D1D3 /* ParallaxCarouselView.swift */,
+			); path = Carousels; sourceTree = "<group>"; };
+		D3B8A2012F2CE2C90051D1D3 /* ParallaxCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxCarouselView.swift; sourceTree = "<group>"; };
 		D3A0B8832EB91C0C009C2D35 /* FlashingButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlashingButtonView.swift; sourceTree = "<group>"; };
 		D3A0B8842EB91C0C009C2D35 /* FloatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingView.swift; sourceTree = "<group>"; };
 		D3A0B8852EB91C0C009C2D35 /* FullScreenDotFieldContinuous.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenDotFieldContinuous.swift; sourceTree = "<group>"; };
@@ -72,6 +78,7 @@
 		D3A8B6712A965F6B005E69D4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D3A8B68C2A96778D005E69D4 /* Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row.swift; sourceTree = "<group>"; };
 		D3A8B68E2A97C813005E69D4 /* gifs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = gifs; sourceTree = SOURCE_ROOT; };
+		D3B5A0012F2B3CDE00A93651 /* UniqueLoadersGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UniqueLoadersGridView.swift; sourceTree = "<group>"; };
 		D3EEB55D2A9A0E0A00528701 /* CirclesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CirclesView.swift; sourceTree = "<group>"; };
 		D3F48AF32E8937B40011A526 /* Circles3D.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Circles3D.swift; sourceTree = "<group>"; };
 		D3F48BC12E8D27000011A526 /* ChipsDrags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipsDrags.swift; sourceTree = "<group>"; };
@@ -117,6 +124,7 @@
 				D39976D92B68159D0015F88B /* DotsAnimationView.swift */,
 				D34AA3B82BCBA6A90076D619 /* RotatingDotsView.swift */,
 				D34674932BDAB5B600D967E2 /* BarLoaderView.swift */,
+				D3B5A0012F2B3CDE00A93651 /* UniqueLoadersGridView.swift */,
 			);
 			path = Animations;
 			sourceTree = "<group>";
@@ -143,7 +151,9 @@
 				D3A8B66A2A965F69005E69D4 /* legendary_AnimoApp.swift */,
 				D3A8B66C2A965F69005E69D4 /* ContentView.swift */,
 				D3A8B68C2A96778D005E69D4 /* Row.swift */,
+				D3B8A2002F2CE2C00051D1D3 /* Carousels */,
 				D3944AAC2A992378009F6BF0 /* Animations */,
+				D3ADBA9E2EBF212500831B22 /* Carousels */,
 				D3A8B66E2A965F6B005E69D4 /* Assets.xcassets */,
 				D3A8B68E2A97C813005E69D4 /* gifs */,
 				D3A8B6702A965F6B005E69D4 /* Preview Content */,
@@ -157,6 +167,13 @@
 				D3A8B6712A965F6B005E69D4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D3ADBA9E2EBF212500831B22 /* Carousels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Carousels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +270,8 @@
 				D3944AB72A9923A8009F6BF0 /* StarsBlinkView.swift in Sources */,
 				D3944AB82A9923A8009F6BF0 /* RectRotationView.swift in Sources */,
 				D34674942BDAB5B600D967E2 /* BarLoaderView.swift in Sources */,
+				D3B8A2022F2CE2C90051D1D3 /* ParallaxCarouselView.swift in Sources */,
+				D3B5A0022F2B3CDE00A93651 /* UniqueLoadersGridView.swift in Sources */,
 				D3944ABD2A9923A8009F6BF0 /* DotsAnimPreview.swift in Sources */,
 				D3EEB55E2A9A0E0A00528701 /* CirclesView.swift in Sources */,
 				D3944AC42A9928A8009F6BF0 /* FireworksView.swift in Sources */,
