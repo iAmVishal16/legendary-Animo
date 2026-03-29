@@ -1,4 +1,4 @@
-# Legendary Animo
+# Legendary Animo &nbsp; [Try on Device](https://testflight.apple.com/join/jZXzPNEf)
 
 Crafted micro-interactions and animation snippets for iOS using SwiftUI, UIKit, SpriteKit and Metal. Drop-in views you can reuse in your next app.
 <p align= "center">
